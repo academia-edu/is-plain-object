@@ -38,7 +38,7 @@
     "test_browser": "mocha-headless-chrome --args=disable-web-security -f test/browser.html",
     "test_node": "mocha -r esm",
     "test": "npm run test_node && npm run build && npm run test_browser",
-    "prepare": "rollup -c"
+    "prepare": "which rollup && ls -la $(which rollup) && rollup -c"
   },
   "devDependencies": {
     "chai": "^4.2.0",
